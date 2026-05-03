@@ -15,9 +15,14 @@ body {
 }
 
 .site-header {
+  min-height: 0;
   border-top: 0;
-  border-bottom: 1px solid #d6d1c4;
+  border-bottom: 0;
   background: #f8f7f2;
+}
+
+.site-title {
+  display: none;
 }
 
 .site-title,
@@ -72,8 +77,7 @@ a:hover,
 }
 
 .site-footer {
-  border-top: 1px solid #d6d1c4;
-  background: #f8f7f2;
+  display: none;
 }
 
 .footer-col-wrapper,
