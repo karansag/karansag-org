@@ -1,0 +1,9 @@
+title: Karan Sagar
+email: karan@karansag.org
+description: Personal website of Karan Sagar.
+url: "https://karansag.org"
+twitter_username: karansag
+github_username: karansag
+theme: minima
+markdown: kramdown
+permalink: /:year/:month/:day/:title/

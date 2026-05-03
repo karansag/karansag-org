@@ -1,27 +1,37 @@
 # karansag.org
 
-Minimal static personal website.
+Minimal Jekyll-based personal website and blog.
 
-## Files
+## Writing posts
 
-- `index.html`: homepage
-- `style.css`: minimal styling
-- `CNAME`: custom domain for GitHub Pages
+Create Markdown files in `_posts/` named like:
+
+```text
+YYYY-MM-DD-title.md
+```
+
+Example:
+
+```md
+---
+layout: post
+title: "My Post"
+---
+
+Post body in Markdown.
+```
 
 ## Local preview
 
-Open `index.html` in a browser, or run a simple static server:
+If Bundler is installed:
 
 ```bash
-python3 -m http.server
+bundle install
+bundle exec jekyll serve
 ```
 
-Then visit `http://localhost:8000`.
+Then visit `http://localhost:4000`.
 
 ## Deployment
 
-The current setup is compatible with:
-
-- GitHub Pages
-- Cloudflare Pages
-- Netlify
+GitHub Pages builds and publishes the site automatically from `master`.

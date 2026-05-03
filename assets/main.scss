@@ -1,0 +1,82 @@
+---
+---
+
+@import "minima";
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.65;
+  color: #111;
+  background: #f8f7f2;
+}
+
+.site-header {
+  border-top: 0;
+  border-bottom: 1px solid #d6d1c4;
+  background: #f8f7f2;
+}
+
+.site-title,
+.site-title:visited,
+.page-link,
+.page-link:visited,
+.post-link,
+a,
+a:visited {
+  color: #003b73;
+}
+
+a:hover,
+.page-link:hover,
+.post-link:hover {
+  color: #7a1f1f;
+}
+
+.wrapper {
+  max-width: 42rem;
+}
+
+.page-content {
+  padding: 2rem 0 3rem;
+}
+
+.home h2,
+.post-content h2,
+.post-content h3,
+.post-title,
+.site-title {
+  line-height: 1.2;
+}
+
+.post-list-heading {
+  margin-top: 2rem;
+  font-size: 1.15rem;
+}
+
+.post-content p,
+.home p,
+.home ul,
+.post-content ul,
+.post-content ol {
+  margin-bottom: 1rem;
+}
+
+.post-content,
+.home {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.site-footer {
+  border-top: 1px solid #d6d1c4;
+  background: #f8f7f2;
+}
+
+.footer-col-wrapper,
+.social-links {
+  color: #555;
+}
