@@ -53,13 +53,16 @@ a:hover,
 .post-content h2,
 .post-content h3,
 .post-title,
-.site-title {
+.site-title,
+.post-list-heading {
   line-height: 1.2;
 }
 
+.home h2,
 .post-list-heading {
   margin-top: 2rem;
-  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
 }
 
 .post-content p,
