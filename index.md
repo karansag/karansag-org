@@ -13,6 +13,10 @@ TBD
 - [X / @karansag](https://x.com/karansag)
 - [GitHub](https://github.com/karansag)
 
+## Projects
+
+- [Math Explainers](https://youtube.com/@mathexplainers1?si=BO_8EkuRwq0lsuRE): Experimenting with auto-generated animations for math / ML.
+
 ## Now
 
 Working on the first version of this site.
