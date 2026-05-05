@@ -16,3 +16,7 @@ Working on the first version of this site.
 ## Projects
 
 - [Math Explainers](https://youtube.com/@mathexplainers1?si=BO_8EkuRwq0lsuRE): Experimenting with auto-generated animations for math / ML.
+
+## Posts
+
+Need some posts :)
