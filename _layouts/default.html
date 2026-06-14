@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      {%- if page.title -%}
+        {{ page.title | escape }} | {{ site.title | escape }}
+      {%- else -%}
+        {{ site.title | escape }}
+      {%- endif -%}
+    </title>
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | absolute_url }}">
+    <script>
+      (function () {
+        var savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "light" || savedTheme === "dark") {
+          document.documentElement.dataset.theme = savedTheme;
+        }
+      }());
+    </script>
+  </head>
+  <body>
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+          light / dark
+        </button>
+        {{ content }}
+      </div>
+    </main>
+    <script src="{{ '/assets/theme.js' | relative_url }}"></script>
+  </body>
+</html>

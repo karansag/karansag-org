@@ -10,15 +10,61 @@ html {
 body {
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.65;
-  color: #111;
-  background: #f8f7f2;
+  color: var(--text-color);
+  background: var(--background-color);
+}
+
+:root {
+  --background-color: #f8f7f2;
+  --text-color: #111;
+  --muted-color: #555;
+  --rule-color: #d6d1c4;
+  --link-color: #003b73;
+  --link-hover-color: #7a1f1f;
+  --button-background: transparent;
+  --button-border: #b8b09f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #151515;
+    --text-color: #e9e2d2;
+    --muted-color: #b8b09f;
+    --rule-color: #4a453b;
+    --link-color: #8fbce6;
+    --link-hover-color: #e4a2a2;
+    --button-background: transparent;
+    --button-border: #6d6658;
+  }
+}
+
+:root[data-theme="light"] {
+  --background-color: #f8f7f2;
+  --text-color: #111;
+  --muted-color: #555;
+  --rule-color: #d6d1c4;
+  --link-color: #003b73;
+  --link-hover-color: #7a1f1f;
+  --button-background: transparent;
+  --button-border: #b8b09f;
+}
+
+:root[data-theme="dark"] {
+  --background-color: #151515;
+  --text-color: #e9e2d2;
+  --muted-color: #b8b09f;
+  --rule-color: #4a453b;
+  --link-color: #8fbce6;
+  --link-hover-color: #e4a2a2;
+  --button-background: transparent;
+  --button-border: #6d6658;
 }
 
 .site-header {
   min-height: 0;
   border-top: 0;
   border-bottom: 0;
-  background: #f8f7f2;
+  background: var(--background-color);
 }
 
 .site-title {
@@ -32,13 +78,13 @@ body {
 .post-link,
 a,
 a:visited {
-  color: #003b73;
+  color: var(--link-color);
 }
 
 a:hover,
 .page-link:hover,
 .post-link:hover {
-  color: #7a1f1f;
+  color: var(--link-hover-color);
 }
 
 .wrapper {
@@ -85,5 +131,35 @@ a:hover,
 
 .footer-col-wrapper,
 .social-links {
-  color: #555;
+  color: var(--muted-color);
+}
+
+.theme-toggle {
+  display: block;
+  margin: 0 0 2rem auto;
+  padding: 0.15rem 0.35rem;
+  border: 1px solid var(--button-border);
+  border-radius: 0;
+  color: var(--muted-color);
+  background: var(--button-background);
+  font: inherit;
+  font-size: 0.78rem;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  color: var(--text-color);
+}
+
+.post-contact {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule-color);
+  color: var(--muted-color);
+  font-size: 0.9rem;
+}
+
+.post-contact a + a {
+  margin-left: 0.75rem;
 }
