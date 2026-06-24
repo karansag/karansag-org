@@ -16,3 +16,7 @@ Working on the first version of this site.
 ## Projects
 
 - [Math Explainers](https://youtube.com/@mathexplainers1?si=BO_8EkuRwq0lsuRE): Experimenting with auto-generated animations for math / ML.
+
+## Code Projects
+
+- [agent-msg](https://github.com/karansag/agent-coordinator): A tiny local message bus that lets AI coding agents in separate tmux panes talk to each other — messages are stored in SQLite and delivered straight into the recipient's prompt.
