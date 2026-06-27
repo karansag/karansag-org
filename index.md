@@ -5,13 +5,8 @@ title: Karan Sagar
 
 ## About
 
-Working on the first version of this site.
+Posts on philosophy, software, and the like
 
-## Links
-
-- [karan@karansag.org](mailto:karan@karansag.org)
-- [X / @karansag](https://x.com/karansag)
-- [GitHub](https://github.com/karansag)
 
 ## Projects
 
@@ -19,4 +14,10 @@ Working on the first version of this site.
 
 ## Code Projects
 
-- [agent-msg](https://github.com/karansag/agent-coordinator): A tiny local message bus that lets AI coding agents in separate tmux panes talk to each other — messages are stored in SQLite and delivered straight into the recipient's prompt.
+- [agent-msg](https://github.com/karansag/agent-coordinator): A tiny local message bus that lets AI coding agents in separate tmux panes talk to each other and coordinate. Messages are stored in SQLite and delivered straight into the recipient's prompt.
+
+## Links
+
+- [karan@karansag.org](mailto:karan@karansag.org)
+- [X / @karansag](https://x.com/karansag)
+- [GitHub](https://github.com/karansag)
